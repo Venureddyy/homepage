@@ -14,7 +14,7 @@ body {
     justify-content: center;
     height: 98vh; /* Adjust the height as needed */
     background: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-                rgba(240, 240, 240, 0.6); /* Adjust the alpha value for transparency */
+                rgba(240, 240, 240, 0.4); /* Adjust the alpha value for transparency */
     border: 10px solid #ffcc00;
     border-image: linear-gradient(45deg, #ff9900, #ff00cc) 1;
     border-radius: 10px;
