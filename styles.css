@@ -52,7 +52,7 @@ h1 {
     padding: 10px 20px;
     text-decoration: none;
     color: #fff;
-    background-color: #3498db;
+    background-color: linear-gradient(45deg, #ff9900, #ff00cc) 1;
     border-radius: 5px;
 }
 
