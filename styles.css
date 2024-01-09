@@ -1,71 +1,70 @@
 body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-image: url('pic.jpg'); /* Replace with the actual URL of your background image */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-image: url('pic.jpg'); /* Replace with the correct path to your background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .portfolio-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 98vh; /* Adjust the height as needed */
-    background: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-                rgba(240, 240, 240, 0.4); /* Adjust the alpha value for transparency */
-    border: 10px solid #ffcc00;
-    border-image: linear-gradient(45deg, #ff9900, #ff00cc) 1;
-    border-radius: 10px;
-    overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 98vh; /* Adjust the height as needed */
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+              rgba(240, 240, 240, 0.4); /* Adjust the alpha value for transparency */
+  border: 10px solid #ffcc00;
+  border-image: linear-gradient(45deg, #ff9900, #ff00cc) 1;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .welcome-section {
-    text-align: center;
-    margin-bottom: 30px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 h1 {
-    font-size: 36px;
-    color: #fff;
+  font-size: 36px;
+  color: #fff;
 }
 
 .profile-image {
-    border-radius: 50%;
-    width: 150px; /* Set the desired width for the image */
-    height: 150px;
-    margin-top: 20px;
+  border-radius: 50%;
+  width: 150px; /* Set the desired width for the image */
+  height: 150px;
+  margin-top: 20px;
 }
 
 .about-me {
-    color: #fff;
-    font-size: 16px;
+  color: #fff;
+  font-size: 16px;
 }
 
 .social-links {
-    display: flex;
+  display: flex;
 }
 
 .social-link {
-    margin: 10px;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: #fff;
-    background-color: linear-gradient(45deg, #ff9900, #ff00cc) 1;
-    border-radius: 5px;
+  margin: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: linear-gradient(45deg, #ff9900, #ff00cc) 1;
+  border-radius: 5px;
 }
 
 /* Add a shining border */
 .portfolio-container {
-    border: 10px solid #ffcc00;
-    border-image: linear-gradient(45deg, #ff9900, #ff00cc) 1;
-    border-radius: 10px;
-    overflow: hidden;
+  border: 10px solid #ffcc00;
+  border-image: linear-gradient(45deg, #ff9900, #ff00cc) 1;
+  border-radius: 10px;
+  overflow: hidden;
 }
 .social-icon {
   width: 20px; /* Adjust the width as needed */
   height: 20px; /* Adjust the height as needed */
   margin-right: 5px; /* Adjust the spacing between icon and text */
 }
-
