@@ -43,8 +43,18 @@ h1 {
   font-size: 16px;
 }
 
+/* Existing styles */
+
 .social-links {
   display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line on small screens */
+  justify-content: center; /* Center items horizontally */
+
+  /* Additional styles for mobile devices */
+  @media (max-width: 600px) {
+    flex-direction: column; /* Display items in a column on small screens */
+    align-items: center; /* Center items vertically */
+  }
 }
 
 .social-link {
@@ -52,19 +62,21 @@ h1 {
   padding: 10px 20px;
   text-decoration: none;
   color: #fff;
-  background-color: linear-gradient(45deg, #ff9900, #ff00cc) 1;
+  background-color: #3498db;
   border-radius: 5px;
+  display: flex; /* Align icon and text horizontally */
+  align-items: center; /* Center items vertically */
+
+  /* Additional styles for mobile devices */
+  @media (max-width: 600px) {
+    margin-bottom: 10px; /* Add space between items in a column on small screens */
+  }
 }
 
-/* Add a shining border */
-.portfolio-container {
-  border: 10px solid #ffcc00;
-  border-image: linear-gradient(45deg, #ff9900, #ff00cc) 1;
-  border-radius: 10px;
-  overflow: hidden;
-}
 .social-icon {
-  width: 20px; /* Adjust the width as needed */
-  height: 20px; /* Adjust the height as needed */
-  margin-right: 5px; /* Adjust the spacing between icon and text */
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
 }
+
+/* Rest of your styles */
