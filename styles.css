@@ -42,35 +42,31 @@ h1 {
   color: #fff;
   font-size: 16px;
 }
-
 /* Existing styles */
-
-.social-links {
-  display: flex;
-  flex-wrap: wrap; /* Allow items to wrap to the next line on small screens */
-  justify-content: center; /* Center items horizontally */
-
-  /* Additional styles for mobile devices */
-  @media (max-width: 600px) {
-    flex-direction: column; /* Display items in a column on small screens */
-    align-items: center; /* Center items vertically */
-  }
-}
 
 .social-link {
   margin: 10px;
   padding: 10px 20px;
   text-decoration: none;
   color: #fff;
-  background-color: #3498db;
   border-radius: 5px;
-  display: flex; /* Align icon and text horizontally */
-  align-items: center; /* Center items vertically */
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
 
-  /* Additional styles for mobile devices */
-  @media (max-width: 600px) {
-    margin-bottom: 10px; /* Add space between items in a column on small screens */
-  }
+  /* Add shining border effect */
+  border: 2px solid transparent;
+  transition: all 0.3s;
+}
+
+/* Shining border styles on hover */
+.social-link:hover {
+  border-image: linear-gradient(45deg, #ff9900, #ff00cc) 1;
+  border-image-slice: 1;
+  border-width: 2px;
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.8); /* Optional: Add a shadow for more emphasis */
+  border-radius: 5px; /* Rounded corners */
 }
 
 .social-icon {
@@ -80,3 +76,4 @@ h1 {
 }
 
 /* Rest of your styles */
+
