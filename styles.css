@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
-  background-image: url('pic.jpg'); /* Replace with the correct path to your background image */
+  background-image: url('/pic.jpg'); /* Replace with the correct path to your background image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -14,7 +14,7 @@ body {
   justify-content: center;
   height: 98vh; /* Adjust the height as needed */
   background: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-              rgba(240, 240, 240, 0.4); /* Adjust the alpha value for transparency */
+              rgba(240, 240, 240, 0.2); /* Adjust the alpha value for transparency */
   border: 10px solid #ffcc00;
   border-image: linear-gradient(45deg, #ff9900, #ff00cc) 1;
   border-radius: 10px;
@@ -31,16 +31,17 @@ h1 {
   color: #fff;
 }
 
+
 .profile-image {
   border-radius: 50%;
-  width: 150px; /* Set the desired width for the image */
-  height: 150px;
+  width: 160px; /* Set the desired width for the image */
+  height: 160px;
   margin-top: 20px;
 }
 
 .about-me {
   color: #fff;
-  font-size: 16px;
+  font-size: 20px;
 }
 /* Existing styles */
 
@@ -48,16 +49,18 @@ h1 {
   margin: 10px;
   padding: 10px 20px;
   text-decoration: none;
-  color: #fff;
-  border-radius: 5px;
+  color: #ffffff;
+  border-radius: 3px;
   display: flex;
   align-items: center;
   position: relative;
   overflow: hidden;
+  
 
   /* Add shining border effect */
   border: 2px solid transparent;
   transition: all 0.3s;
+  
 }
 
 /* Shining border styles on hover */
@@ -81,6 +84,3 @@ h1 {
   font-size: 15px;
   color: #fff;
 }
-
-
-
