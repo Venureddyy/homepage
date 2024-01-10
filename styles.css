@@ -30,10 +30,6 @@ h1 {
   font-size: 36px;
   color: #fff;
 }
-.h5 {
-  font-size: 15px;
-  color: #fff;
-}
 
 .profile-image {
   border-radius: 50%;
@@ -80,4 +76,20 @@ h1 {
 }
 
 /* Rest of your styles */
+
+h5 {
+  font-size: 25px;
+  color: #fff;
+}
+
+.portfolio-container {
+  /* Your existing styles */
+
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+              rgba(240, 240, 240, 0.4); /* Adjust the alpha value for transparency */
+  border: 10px solid #ffcc00;
+  border-image: linear-gradient(45deg, #ff9900, #ff00cc) 1;
+  border-radius: 10px;
+  overflow: hidden;
+}
 
