@@ -55,22 +55,57 @@ h1 {
   align-items: center;
   position: relative;
   overflow: hidden;
-  
+
 
   /* Add shining border effect */
-  border: 2px solid transparent;
-  transition: all 0.3s;
+border: 2px solid transparent;
+transition: all 0.3s;
+border-radius: 20px;
+
+/* Sparkling effect on hover */
+&:hover {
+  background: linear-gradient(45deg, #ff9900, #ff00cc);
+  border: 2px solid #f7f6f6; /* Set the border color to white */
+  border-radius: 20px;
+}
+
+&:hover::before,
+&:hover::after {
+  background: linear-gradient(45deg, #fff, #fff); /* Set the background color to white */
+}
+
   
 }
 
-/* Shining border styles on hover */
-.social-link:hover {
-  border-image: linear-gradient(45deg, #ff9900, #ff00cc) 1;
-  border-image-slice: 1;
-  border-width: 2px;
-  box-shadow: 0 0 10px rgba(255, 204, 0, 0.8); /* Optional: Add a shadow for more emphasis */
-  border-radius: 5px; /* Rounded corners */
+/* Shining border styles */
+.social-link {
+  position: relative;
 }
+
+.social-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 20px; /* Rounded corners */
+  background: linear-gradient(45deg, #ff9900, #ff00cc);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition: transform 0.3s ease-out;
+  z-index: -1; /* Ensure the pseudo-element is behind the content */
+}
+
+.social-link:hover::before {
+  transform: scaleX(1);
+}
+
+/* Optional: Additional styles to make the border always visible */
+.social-link::before {
+  transform: scaleX(1);
+}
+
 
 .social-icon {
   width: 20px;
@@ -84,3 +119,4 @@ h1 {
   font-size: 15px;
   color: #fff;
 }
+
