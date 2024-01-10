@@ -30,6 +30,10 @@ h1 {
   font-size: 36px;
   color: #fff;
 }
+h5 {
+  font-size: 25px;
+  color: #fff;
+}
 
 .profile-image {
   border-radius: 50%;
